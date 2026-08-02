@@ -28,3 +28,5 @@ jobs:
         run: python examples/quickstart.py
       - name: Run benchmark
         run: python -m riskbandit.benchmark
+      - name: Run conformal-coverage correction comparison
+        run: python -m riskbandit.eval_v2
