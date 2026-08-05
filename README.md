@@ -2,7 +2,6 @@
 
 The reward-greedy policy does exactly what you told it to do and exactly what you were afraid it would do. riskbandit builds the guardrail that stops it.
 
-![CI](https://github.com/ahmeddoghri/riskbandit/actions/workflows/ci.yml/badge.svg)
 ![python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![deps](https://img.shields.io/badge/runtime%20deps-none-success)
 ![license](https://img.shields.io/badge/license-MIT-black)
