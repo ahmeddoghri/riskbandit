@@ -2,9 +2,13 @@
 
 The reward-greedy policy does exactly what you told it to do and exactly what you were afraid it would do. riskbandit builds the guardrail that stops it.
 
+[![tests](https://github.com/ahmeddoghri/riskbandit/actions/workflows/tests.yml/badge.svg)](https://github.com/ahmeddoghri/riskbandit/actions/workflows/tests.yml)
 ![python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![deps](https://img.shields.io/badge/runtime%20deps-none-success)
 ![license](https://img.shields.io/badge/license-MIT-black)
+[![case study](https://img.shields.io/badge/case%20study-adoghri.com-e0703e)](https://adoghri.com/project-32.html)
+
+![riskbandit](docs/cover.jpg)
 
 Optimize a contextual bandit for reward alone and it will happily find the
 action that blows through your risk budget, because nobody told it a budget
