@@ -60,9 +60,12 @@ comparison. Headline numbers above are untouched. Details below.
 
 `policy._quantile(values, q)` computes `values[ceil(q * n) - 1]`. The
 correct split-conformal order statistic for a marginal `(1-alpha)` coverage
-guarantee (Vovk et al.; Lei et al. 2018) is `values[ceil((n+1) * q) - 1]` --
-one index further out. Missing that `+1` undercovers by roughly `1/(2n)`,
-worse for the smaller per-action calibration slices this repo actually uses.
+guarantee (Vovk et al.; Lei et al. 2018) is `values[ceil((n+1) * q) - 1]`,
+one index further out. The k-th order statistic of n exchangeable residuals
+covers a fresh point with probability k/(n+1), so missing that `+1`
+undercovers by about `q/(n+1)`. With three actions logged at 45/30/25% of
+300 calibration points, the per-action slices are 135, 90, and 75 points,
+which predicts about 89.4% coverage; the measured value is 89.2%.
 
 ```bash
 python -m riskbandit.eval_v2
